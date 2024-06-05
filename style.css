@@ -1,0 +1,206 @@
+/*General CSS*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigation*/
+.navigation {
+  width: 100%;
+  height: 80px;
+}
+
+.nav-container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  background-color: #000000;
+}
+
+.nav-container .links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.nav-container .logo {
+  display: flex;
+  align-items: center;
+  color:purple;
+}
+
+.nav-container .links a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*Home*/
+.home {
+  background-image:url("https://i1.pickpik.com/photos/846/660/945/sky-clouds-night-sunset-ccc8d09cbd3c9c263825ed50405e0eb2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+}
+
+.home-text {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*About*/
+.about {
+  height: 700px;
+  background-color: #238adf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.title {
+  color:white;
+  width:100%;
+  margin:auto;
+  padding:60px 10px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 10%;
+  width: 80%; 
+}
+
+.about img {
+  height: 400px;
+  width: 100px;
+  margin: 20px;
+}
+
+.about-main {
+  width: 90%;
+  margin: auto;
+  padding-left: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;  
+}
+
+.about-text {
+  background-color: rgb(16, 19, 47);
+  padding: 30px ;
+  width:500px;
+  background-color: #ce2828;
+}
+
+
+/*Resume*/
+.resume {
+  background-color: #1d1d1d;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Droid Sans", sans-serif;
+  position: relative; /* Added */
+}
+
+.resume .entries {
+  width: calc(100% - 80px);
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  left: -5px;
+}
+
+.resume .entry {
+  width: calc(50% - 80px);
+  float: left;
+  padding: 20px;
+  clear: both;
+  text-align: right;
+  position: relative; /* Added */
+}
+
+.resume .entry:not(:first-child) {
+  margin-top: -60px;
+}
+
+.resume .entry .title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  position: relative;
+  color: #fff;
+}
+
+.resume .entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #ffffff;
+  background-color: #1d1d1d;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -73px;
+  z-index: 1000;
+}
+
+.resume .entry .title.big:before {
+  width: 24px;
+  height: 24px;
+  transform: translate(8px, -50%);
+}
+
+.resume .entry .body {
+  color: #aaa;
+}
+
+.resume .entry:nth-child(2n) {
+  text-align: left;
+  float: right;
+}
+
+.resume .entry:nth-child(2n) .title:before {
+  left: -63px;
+}
+
+.resume .entry:nth-child(2n) .title.big:before {
+  transform: translate(-8px, -50%);
+}
+
+.resume .entry::before { /* Added */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px; /* Adjust as needed */
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.resume .entry:last-child::before { /* Added */
+  height: 50%;
+}
+
+
+/*Projects*/
+.projects {
+  background-color: green;
+}
+
+/*Contact*/
+.contact {
+  background-color: magenta;
+}
