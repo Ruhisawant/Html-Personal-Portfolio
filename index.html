@@ -1,90 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Ruhi's Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/dffb33fd1a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>Ruhi's Portfolio Website</title>
 </head>
-  
-<body class="body">
-  <!--Navbar-->
-  <section>
-    <nav class="nav-container">
-      <div class="logo"> 
-        <p>insert logo</p>
-      </div>
-      <div class="links">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#resume">RESUME</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>        
-      </div>
+<body>
+
+<!--------------header-------------->
+<header class="header header-scrolled">
+    <img src="images/logo.png" class="logo">
+
+    <nav class="navbar" onclick="active-link">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </section>
+</header>
 
-  <!--Home Page-->
-  <section id="home" class="home">
-    <div class="home-text">
-      <h1>Ruhi Sawant<br>Computer Science Student</h1>
-    </div>
-  </section>
-
-  <!--About Page-->
-  <section id="about" class="about">
-    <div class="title">GET TO KNOW ME</div>
-    <div class="about-main">
-      <div>
-        <img src="https://spaces.w3schools.com/images/xwMlVSqP20U.jpg">
-      </div>
-        
-      <div class="about-text">
-        <h2>Hi! I'm Ruhi Sawant</h2>
-        <p>I'm a computer science student seeking new opportunities. I'm a GSU class of 2026 B.S. and M.S. 
-            in Computer Science. My primary interests have been precision health, data flow, zero to one, and 
-            the list is still growing. in college i</p>
-        <p>outside college i: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-        <p>Follow Me on Social media???? add icons if yes</p>
-      </div>
-    </div>
-  </section>
-
-  <!--Resume Page-->
-<section id="resume" class="resume">
-  <div class="title">Resume</div>
-  <div class="resume-main">
-    <div class="timeline">
-      <div class="entry">
-        <div class="title big">2010</div>
-        <div class="body">
-          <p>Volunteer Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum suscipit eveniet amet dignissimos. Doloremque et distinctio quod molestiae ut.</p>
+<!--------------home-------------->
+<section class="home" id="home">
+    <div class="home-content">
+        <div class="wrapper">
+            <div id="app"></div>
         </div>
-      </div>
-      <div class="entry">
-        <div class="title">2011</div>
-        <div class="body">
-          <p>Volunteer Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum suscipit eveniet amet dignissimos. Doloremque et distinctio quod molestiae ut.</p>
-        </div>
-      </div>
-      <!-- Add more entries as needed -->
     </div>
-  </div>
+</section>
+
+<!--------------about-------------->
+<section class="about" id="about">
+    <div class="about-col-1">
+        <img src="images/mypicture.png">
+    </div>
+    <div class="about-col-2">
+        <h1 class="title">Let Me Introduce Myself</h1>
+        <p>I am a dedicated and passionate student currently pursuing a master's and bachelor's degree in
+            computer science in a dual degree program at Georgia State University. With a strong focus on 
+            artificial intelligence, cybersecurity, and software development, I have honed my skills 
+            through rigorous coursework and hands-on projects. My academic journey has equipped me with a 
+            solid foundation in theoretical concepts and practical applications, allowing me to tackle 
+            complex problems with innovative solutions.<br>
+            <br>
+            Outside of my studies, I am actively involved in several student organizations and tech 
+            communities, where I share my knowledge and continuously learn from others. As a member 
+            of the executive committee for the Panther Web Development Club and an active participant in 
+            the Girls Who Code and the Cybersecurity club, I engage with peers and professionals to 
+            stay on top of the latest trends and technologies in the field.<br>
+            <br>
+            My goal is to leverage my expertise in AI, cybersecurity, and software development to create 
+            impactful solutions that address real-world problems. I am excited to connect with like-minded 
+            professionals and explore opportunities that will allow me to grow and make a meaningful 
+            contribution to the field. Welcome to my portfolio, where you can learn more about my work, 
+            projects, and aspirations!</p>
+    </div>
+</section>
+
+<!--------------resume-------------->
+<section class="resume" id="resume">
+    <h1 class="title" style="text-align: center; padding-top: 80px;">Here Are Some Of My Credentials!</h1>
+
+    <div class="timeline-list">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>High School</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>University</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>Internship</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>Job</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------skills----------->
+<section id="skills">
+    <div class="skills-list">
+        <div class="skill-item">
+            <div class="icon-title">
+                <i class="fas fa-code"></i><h2>Languages</h2>
+            </div>
+            <p>Python, C++, Java, C, JavaScript, MySQL, SQL, Assembly, HTML, CSS, R</p>
+        </div>
+        <div class="skill-item">
+            <div class="icon-title">
+                <i class="fa-solid fa-laptop"></i><h2>Project Management</h2>
+            </div>
+            <p>GitHub, Jupyter Notebooks, Presentation Skills, Team Leadership/Management, Cross-Team Communication, Great Sense of Humor</p>
+        </div>
+        <div class="skill-item">
+            <div class="icon-title">
+                <i class="fa-solid fa-layer-group"></i><h2>Development</h2>
+            </div>
+            <p>Linux, Windows, Virtual Machines, React, Bootstrap, Anaconda, GPT, Generative AI Tools</p>
+        </div>
+    </div>
+</section>
+
+<!--------------portfolio-------------->
+<section class="portfolio" id="portfolio">
+    <h1 class="title" style="text-align: center;">Check Out My Creations</h1>
+    
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Music App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Online Shopping App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div> 
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Music App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/work.png">
+            <div class="portfolio-layer">
+                <h3>Online Shopping App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div> 
+    </div>
+    <a href="#" class="btn">See more</a>
+</section>
+
+<!--------------contact-------------->
+<section class="contact" id="contact">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="title">Let's Connect!</h1>
+            <p><i class="fas fa-paper-plane"></i> ruhi.p.sawant@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> (470) 301-0550</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/Ruhi Resume 2024.pdf" download class="btn btn2">Download Resume/CV</a>
+        </div>
+
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
 </section>
 
 
-  <!--Projects Page-->
-  <section id="projects" class="projects">
-    <div><h1>Some of my Projects</h1></div>
-    <div><h2>Some mini projects</h2></div>
-  </section>
+<!--------------footer-------------->
+<footer class="footer">
+    <p><i class="fas fa-heart"></i> Thank you for your time! <i class="fas fa-heart"></i></p>
+</footer>
 
-  <!--Contacts Page-->
-  <section id="contact" class="contact">
-    <div class="title">Contact Me</div>
-    <div></div>
-  </section>
 </body>
-
 </html>
