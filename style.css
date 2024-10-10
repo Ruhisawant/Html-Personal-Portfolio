@@ -90,7 +90,7 @@ section{
 /*--------home--------*/
 .home{
   width: 100%;
-  background-image: url(images/background.png);
+  background-image: url(content/background.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
