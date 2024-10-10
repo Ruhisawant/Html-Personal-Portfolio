@@ -22,8 +22,7 @@ To view my portfolio, simply visit [ruhisawant.github.io](https://ruhisawant.git
 
 ### Website Preview
 <video autoplay loop muted playsinline>
-  <source src="content/Website Preview.mov" type="video.mov">
-  Your browser does not support the video tag.
+  <source src="content/WebsitePreview.gif">
 </video>
 
 ### Contact
