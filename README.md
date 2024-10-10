@@ -21,7 +21,7 @@ This is my personal portfolio where I showcase my skills and projects in compute
 To view my portfolio, simply visit [ruhisawant.github.io](https://ruhisawant.github.io).
 
 ### Website Preview
-![Website Preview]([images/background.png](https://ruhisawant.github.io)
+![Website Preview](https://ruhisawant.github.io)
 
 ### Contact
 
